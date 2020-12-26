@@ -7,22 +7,20 @@ import {
 } from "../../../component/common";
 import { Link } from "react-router-dom";
 import SimpleReactValidator from 'simple-react-validator';
-import { userSignin } from "../../../redux/actions/login";
 import { history } from "../../../helpers";
-import { LOGIN_TYPE, EXIST_LOCAL_STORAGE } from "../../../service/constants";
+import {  EXIST_LOCAL_STORAGE } from "../../../service/constants";
+import { auth } from "firebaseConfig"
 export class Login extends React.Component {
   state = {
     loginForm: {
       username: "",
       password: "",
-      userType: LOGIN_TYPE.ADMIN
     },
     isFormLoder: false,
     isKeepMe: false,
     keepMeObj: {
       username: "",
       password: "",
-      userType: LOGIN_TYPE.ADMIN
     }
   };
 
@@ -50,6 +48,7 @@ export class Login extends React.Component {
       element: message => <span className="error-message text-danger validNo fs14">{message}</span>,
       autoForceUpdate: this,
     });
+
   }
 
 
@@ -72,10 +71,10 @@ export class Login extends React.Component {
     if (this.validator.allValid()) {
       this.validator.hideMessages();
       this.setState({ isFormLoder: true });
-      userSignin(loginForm).then((data) => {
-        console.log(isKeepMe)
-        if (!!data) {
-          localStorage.setItem(EXIST_LOCAL_STORAGE.USER_ID, data);
+      auth.signInWithEmailAndPassword(loginForm.username, loginForm.password).then(({ user: { uid } }) => {
+
+        if (!!uid) {
+          localStorage.setItem(EXIST_LOCAL_STORAGE.USER_ID, uid);
           if (isKeepMe) {
             keepMeObj.username = loginForm.username;
             keepMeObj.password = loginForm.password;
@@ -86,7 +85,8 @@ export class Login extends React.Component {
             localStorage.setItem(EXIST_LOCAL_STORAGE.IS_KEEP_ME, 0);
             localStorage.setItem(EXIST_LOCAL_STORAGE.KEEP_ME_OBJ, JSON.stringify(keepMeObj));
           }
-          history.push(`/dashboard`)
+          history.push(`/dashboard/`)
+          // history.
         }
         this.setState({ isFormLoder: false })
       }).catch((error) => {

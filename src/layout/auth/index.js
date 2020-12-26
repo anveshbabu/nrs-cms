@@ -7,7 +7,7 @@ export class AuthLayout extends React.Component {
       <>
         <div className="row">
           <div className="col-md-6 auth-layout d-flex align-items-center text-center">
-          <img src={logo} alt="Logo"  />
+         <h4 className="text-white m-auto">NRS Chicken</h4>
           </div>
           {/* <div className="col-md-6 d-flex align-items-center"> */}
           <div className="col-md-6 align-self-center">

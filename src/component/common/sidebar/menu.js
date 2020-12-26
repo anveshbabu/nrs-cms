@@ -2,7 +2,17 @@ const menu = [
   {
     to: "/dashboard/",
     icon: "dashboard",
-    text: "Dashboard",
+    text: "Banner ",
+    submenu:[]
+  },{
+    to: "/product/",
+    icon: "dashboard",
+    text: "Product ",
+    submenu:[]
+  },{
+    to: "/about/",
+    icon: "dashboard",
+    text: "About ",
     submenu:[]
   }
   

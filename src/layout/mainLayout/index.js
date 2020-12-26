@@ -6,18 +6,18 @@ export class MainLayout extends React.Component {
 
 
   componentWillMount() {
-    let authToken = localStorage.getItem(EXIST_LOCAL_STORAGE.AUTHTOKEN);
+    // let authToken = localStorage.getItem(EXIST_LOCAL_STORAGE.AUTHTOKEN);
     let userId = localStorage.getItem(EXIST_LOCAL_STORAGE.USER_ID);
-    console.log(userId )
-    console.log(authToken)
-    console.log('-----------',!(!!authToken && !!userId))
-    if (!(!!authToken && !!userId)) {
+    console.log(userId)
+
+    if (!userId) {
       console.log('no token')
       history.push("/auth/login")
-    
-    }else{
-      console.log('Yes token')
+
+    } else {
+      console.log('no token')
      
+
     }
 
   }

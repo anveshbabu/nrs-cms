@@ -55,50 +55,35 @@ const routers = [
   },
   {
     component: "MainLayout",
-    path: "/users",
-    redirect: "/users/",
+    path: "/product",
+    redirect: "/product/",
     auth: false,
     exact: false,
     childrens: [
       {
-        component: "UsersList",
+        component: "Product",
         path: "/",
         auth: false,
         exact: true
       },
-      {
-        component: "ViewProfile",
-        path: "/details",
-        auth: false,
-        exact: true
-      }
+      
     ]
   },
 
   {
     component: "MainLayout",
-    path: "/services",
+    path: "/about",
     redirect: "",
     auth: false,
     exact: false,
     childrens: [
       {
-        component: "Services",
+        component: "About",
         path: "/",
         auth: false,
         exact: true
       },
-      {
-        component: "AddServices",
-        path: "/create",
-        auth: false,
-        exact: true
-      }, {
-        component: "PropertiesTab",
-        path: "/properties",
-        auth: false,
-        exact: true
-      }
+     
     ]
   },
   

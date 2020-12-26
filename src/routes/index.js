@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route,HashRouter } from "react-router-dom";
+import { Route,HashRouter,Router } from "react-router-dom";
 import routers from "./routes";
 
 import * as Layout from "../layout";
@@ -30,7 +30,7 @@ class Routes extends Component {
   render() {
 
     return (
-      <HashRouter  history={history}>
+      <Router  history={history}>
         {routers.map(
         ({
           component,
@@ -117,7 +117,7 @@ class Routes extends Component {
         })}
 
 {/* <Route component={NoMatch} /> */}
-      </HashRouter>
+      </Router>
       
         // <Switch >         
         // </Switch>
