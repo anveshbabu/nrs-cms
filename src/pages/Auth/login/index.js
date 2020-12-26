@@ -85,7 +85,7 @@ export class Login extends React.Component {
             localStorage.setItem(EXIST_LOCAL_STORAGE.IS_KEEP_ME, 0);
             localStorage.setItem(EXIST_LOCAL_STORAGE.KEEP_ME_OBJ, JSON.stringify(keepMeObj));
           }
-          history.push(`#/dashboard/`)
+          history.push(`/dashboard/`)
           // history.
         }
         this.setState({ isFormLoder: false })
