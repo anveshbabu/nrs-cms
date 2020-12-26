@@ -30,7 +30,7 @@ class Routes extends Component {
   render() {
 
     return (
-      <Router  history={history}>
+      <HashRouter  history={history}>
         {routers.map(
         ({
           component,
@@ -117,7 +117,7 @@ class Routes extends Component {
         })}
 
 {/* <Route component={NoMatch} /> */}
-      </Router>
+      </HashRouter>
       
         // <Switch >         
         // </Switch>
