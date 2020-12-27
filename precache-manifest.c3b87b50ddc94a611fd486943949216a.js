@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d79049ea7b3db4b2fcb5e42d5044fac7",
+    "revision": "acd73096faf03e450fa7c0a056203635",
     "url": "/nrs-cms/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nrs-cms/static/css/2.68dd0589.chunk.css"
   },
   {
-    "revision": "38b4e5045e4eb3abf5b1",
+    "revision": "8e4647a815f168fb8f96",
     "url": "/nrs-cms/static/css/main.f3b78bd1.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nrs-cms/static/js/2.4f9d18fd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38b4e5045e4eb3abf5b1",
-    "url": "/nrs-cms/static/js/main.d6c63d38.chunk.js"
+    "revision": "8e4647a815f168fb8f96",
+    "url": "/nrs-cms/static/js/main.129bda12.chunk.js"
   },
   {
     "revision": "736344c17469328ccd8a",
