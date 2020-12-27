@@ -30,7 +30,7 @@ class Routes extends Component {
   render() {
 
     return (
-      <HashRouter  history={history}>
+      <HashRouter  hashType={'slash'}>
         {routers.map(
         ({
           component,

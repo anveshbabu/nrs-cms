@@ -7,7 +7,6 @@ import {
 } from "../../../component/common";
 import { Link } from "react-router-dom";
 import SimpleReactValidator from 'simple-react-validator';
-import { history } from "../../../helpers";
 import {  EXIST_LOCAL_STORAGE } from "../../../service/constants";
 import { auth } from "firebaseConfig"
 export class Login extends React.Component {
@@ -85,8 +84,10 @@ export class Login extends React.Component {
             localStorage.setItem(EXIST_LOCAL_STORAGE.IS_KEEP_ME, 0);
             localStorage.setItem(EXIST_LOCAL_STORAGE.KEEP_ME_OBJ, JSON.stringify(keepMeObj));
           }
-          history.push(`/dashboard/`)
+          // history.push(`/dashboard/`)
+          // window.location.hash(`/dashboard/`)
           // history.
+          this.props.history.push({pathname:'/dashboard'})
         }
         this.setState({ isFormLoder: false })
       }).catch((error) => {
