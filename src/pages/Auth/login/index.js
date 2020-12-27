@@ -119,8 +119,8 @@ export class Login extends React.Component {
         <div className="col-md-9 col-xs-9">
           <div className="row">
             <div className="col-md-12 title">
-              <h4>Sign in to access Juggle</h4>
-              <h4>Super Admin Portal</h4>
+              <h4>Sign in to access NRS Chicken</h4>
+              <h4>Super CMS Portal</h4>
             </div>
           </div>
 
