@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2bfad3e0c49d3c2c44cd953a1e624f6",
+    "revision": "fd400e79620ea597bf89463043634fcb",
     "url": "/nrs-cms/index.html"
   },
   {
-    "revision": "615392bcf5de8cba8d47",
+    "revision": "0f2cfdd1aae1f7dc05d0",
     "url": "/nrs-cms/static/css/2.68dd0589.chunk.css"
   },
   {
-    "revision": "6422756843b3ba7fda91",
+    "revision": "d1bbddff01f0299422ad",
     "url": "/nrs-cms/static/css/main.f3b78bd1.chunk.css"
   },
   {
-    "revision": "615392bcf5de8cba8d47",
-    "url": "/nrs-cms/static/js/2.4f9d18fd.chunk.js"
+    "revision": "0f2cfdd1aae1f7dc05d0",
+    "url": "/nrs-cms/static/js/2.dd6a0b94.chunk.js"
   },
   {
     "revision": "30c5fe8cfc4fffa7b5911f1f5905261d",
-    "url": "/nrs-cms/static/js/2.4f9d18fd.chunk.js.LICENSE.txt"
+    "url": "/nrs-cms/static/js/2.dd6a0b94.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6422756843b3ba7fda91",
-    "url": "/nrs-cms/static/js/main.162d344c.chunk.js"
+    "revision": "d1bbddff01f0299422ad",
+    "url": "/nrs-cms/static/js/main.56a7c5db.chunk.js"
   },
   {
     "revision": "736344c17469328ccd8a",
