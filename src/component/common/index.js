@@ -16,3 +16,4 @@ export {Tabs} from './typography/tabs';
 export {NormalRadio} from './typography/radio';
 export {Stepper} from './typography/stepper';
 export {AppAsyncSelect} from './typography/app async select';
+export {NormalToggleSwitch} from './typography/toggleSwitch';
